@@ -1,0 +1,60 @@
+body {
+    background-color: #9EC1BA;
+    background: linear-gradient(to right, #9EC1BA, rgb(0,69,75));
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+.bg {
+    background-image: url(../image/benvenuto.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.password-veryweak:focus {
+    border-color: #c41313 !important;
+    box-shadow: 0 0 0 .25rem rgba(255, 17, 0, 0.46) !important;
+}
+
+.password-weak:focus {
+    border-color: #c4c113 !important;
+    box-shadow: 00 0 0 .25rem rgba(255, 230, 0, 0.54) !important;
+}
+
+.password-medium:focus {
+    border-color: #c4930e !important;
+    box-shadow: 0 0 0 .25rem rgba(255, 188, 2, 0.6) !important;
+}
+
+.password-strong:focus {
+    border-color: #24ad12 !important;
+    box-shadow:  0 0 .25rem rgba(94, 255, 0, 0.55) !important;
+}
+
+#password-strength, #confirm-password-strength {
+    float: right;
+}
+.btn{
+  background-color: #7a6656!important;
+  color: white!important;
+  border: 1px solid #e7bb98!important;
+}
+.btn:hover{
+  background-color: #7a6656!important;
+  border: 2px solid black!important;
+  margin-top: -2px;
+}
+#fb:hover,#google:hover{
+  border: 1px solid black;
+  text-decoration: underline;
+  margin-bottom: -1px!important;
+
+}
+.my-3 a{
+color:#7a6656!important;
+text-decoration: none!important;
+}
+.my-3:hover{
+text-decoration: underline;
+margin-top: 0 auto;
+}

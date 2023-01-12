@@ -1,0 +1,99 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+
+}
+}.nav-link:hover {
+    text-decoration: underline;
+    color: white !important;
+}
+.navbar-brand{
+  padding: 0!important;
+}
+.navbar-brand:hover{
+border-bottom: 0.2px solid rgb(0,69,75);
+}
+.navbar a:not(.dropdown-menu a) {
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar {
+    background: linear-gradient(to right, #9EC1BA 50%, rgb(0,69,75));
+    margin-right: 0em;
+    margin-left: 0em;
+    margin-bottom: 1em;
+}
+
+.navbar a {
+    cursor: pointer;
+}
+
+.sticky-top {
+    top: 1em !important;
+}
+
+.fa-cart-plus {
+    padding-right: 10px;
+}
+
+img:not(#shoppingCart) {
+    margin: auto;
+    background-color: white !important;
+    padding: inherit;
+}
+
+#shoppingCart {
+    width: 22px;
+}
+
+#cart {
+    float: right;
+    border-radius: 32px!important;
+}
+
+.dropdown{
+  display: none!important;
+}
+
+.container {
+    margin-top: 1em !important;
+}
+
+.btn-check:focus + .btn-success, .btn-success:focus{
+    box-shadow: none !important;
+}
+.btn-check:focus + .btn, .btn:focus{
+    box-shadow: none !important;
+}
+
+thead, tbody > tr > td:not(:first-child){
+    text-align: right;
+}
+thead th{
+    padding: 0rem .5rem;
+}
+
+#checkout{
+    transition: 0.2s;
+}
+.loader {
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    animation: an1 0.8s ease infinite;
+}
+
+@keyframes an1 {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
