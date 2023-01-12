@@ -9,7 +9,7 @@ isLogged();
 ?>
 <!doctype html>
 <html lang="en">
-  <!--CIAO-->
+  <!--CIAO bello-->
 
 <head>
     <!-- CSS -->
