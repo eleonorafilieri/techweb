@@ -5,7 +5,7 @@
     });
 
 $(function () {
-    //STAMPA IL CARELLO
+    //STAMPA IL CARRELLO
     reloadCart();
 
     //pulisce la carta

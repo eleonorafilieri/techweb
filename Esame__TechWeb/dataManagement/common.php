@@ -12,7 +12,8 @@ function redirect($url, $message){
     die;
 }
 
-//funzione per controllare se è loggato
+//funzione per controllare se l'utente ha effettivamente fatto il login oppure
+//ha inserito nella barra di ricerca direttamente l'homepage
 function isLogged(){
     if (!isset($_SESSION["username"])) {
         redirect("../pagine/index.php", "Per favore registrati se vuoi usare questo sito web!");

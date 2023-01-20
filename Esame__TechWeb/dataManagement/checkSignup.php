@@ -11,7 +11,7 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["email"]) && isset($_REQUEST
 }
 
 if ($password != $confirm_password) {
-    echo("Le passord non coincidono");
+    echo("Le password non coincidono");
 }
 
 $cryptoPassword = md5($password);
@@ -25,4 +25,8 @@ if (checkEmail($email)) {
     $_SESSION["name"] = $username;
     redirect("../pagine/index.php", "Usa i dati della registrazione per effettuare l'accesso.");
 }
+//redirect è una funzione definita nel file common.php( incluso nel file db.php)che 
+//gestisce due parametri: l'url della pagine a cui fare il redirect e il valore di un messaggio
+//da inserire o nella medesima pagina signup.php per segnalare eventuali errori o nell'h5 presente
+//nella pagina di index.php
 ?>
