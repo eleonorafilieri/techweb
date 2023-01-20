@@ -69,25 +69,6 @@ $(function () {
         });
 
     });
-
-    //TODO: NON FUNZIONAAAAAA AAAAAAAA
-    $('#add').click(function () {
-        $('#add-name').val('');
-        $('#add-price').val('');
-    });
-
-    /*
-    //CAMBIO COLORE DEL CARRELLO MOUSE-HOVER
-    $('#carrello').on('mouseover', function () {
-        $("#shoppingCart").attr("src", "../image/cartHover.png");
-        $(".badge").css("color", "red");
-    });
-    $('#carrello').on('mouseout', function () {
-        $("#shoppingCart").attr("src", "../image/cart.png");
-        $(".badge").css("color", "white");
-    });
-    */
-
     //FAR CHIUDERE LA NAVBAR QUANDO È COLLAPSE
     $('.navbar-collapse a:not(#navbarDropdownMenuLink)').click(function () {
         $(".navbar-collapse").collapse('hide');

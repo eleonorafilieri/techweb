@@ -10,7 +10,7 @@ $(function () {
 
     //pulisce la carta
     $('#clearCart').click(function () {
-        var msg = "Cart cleared successfully";
+        var msg = "Carrello svuotato con successo!";
         $.ajax({
             url: '../dataManagement/clearCart.php',
             type: 'GET',
@@ -25,7 +25,7 @@ $(function () {
 
     //elimina un prodotto
     $('.col').on('click', '#deleteProduct', function () {
-        var msg = "Product deleted from cart";
+        var msg = "Prodotto cancellato con successo!";
         var id = $(this).attr("data-value");
         $('.table').empty();
         //$(this).closest('tr').remove();
@@ -48,7 +48,7 @@ $(function () {
             $(this).css("color", "white");
             $(this).css("pointer-events", "none");
         }, 2000);
-        var msg = "Product buy successfully!";
+        var msg = "Prodotto acquistato con successo!";
         setTimeout(loadXML, 2300);
         function loadXML(){
             $.ajax({

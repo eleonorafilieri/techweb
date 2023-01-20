@@ -213,3 +213,10 @@ p.mb-0{
 .hello{
   background-color: #cce0dc;
 }
+footer{
+    width: 100%;
+    background-color: #9EC1BA;
+}
+h5{
+    font-weight: bolder!important;
+}

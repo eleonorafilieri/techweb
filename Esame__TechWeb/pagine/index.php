@@ -60,38 +60,7 @@ include("../dataManagement/db.php");
                         <button type="submit" class="btn btn-primary mb-2">Login</button>
                         <a class="btn btn-primary" href="signup.php" role="button" id="registration">Registrati</a>
                     </div>
-
-                    <div class="my-3">
-                        <span><a href="#">Recupera password</a></span>
-                    </div>
                 </form>
-
-                <!-- LOGIN CON SOCIAL-->
-                <div class="container w-100 my-5">
-                    <div class="row text-center">
-                        <div class="col-12">Oppure esegui l'accesso con:</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button id="fb" class="btn no-func btn-outline-primary w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-12 text-center">
-                                        Facebook
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button id="google" class="btn no-func btn-outline-danger w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-12  col-md-12 text-center">
-                                        Google
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

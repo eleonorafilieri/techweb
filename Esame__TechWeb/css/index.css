@@ -19,12 +19,6 @@ body{
   border: 2px solid black;
   margin-top: -2px;
 }
-#fb:hover,#google:hover{
-  border: 1px solid black;
-  text-decoration: underline;
-  margin-top: 0 auto!important;
-
-}
 .my-3 a{
 color:#7a6656!important;
 text-decoration: none!important;

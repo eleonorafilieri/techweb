@@ -1,3 +1,4 @@
+
 *{
   font-family: 'Montserrat', sans-serif;
 
@@ -199,10 +200,25 @@ img:not(#shoppingCart) {
 p.mb-0{
   font-size: 0.8rem;
 }
+.about_title{
+    margin: -2rem 0;
+    opacity: 0.3;
+
+}
 .about_p{
   text-align: left;
-  margin: 0 1rem;
+  margin: -2rem 1rem;
   font-size: 0.9rem;
+  opacity: 0.3;
+}
+#image_about{
+    margin-right: -3em!important;
+    opacity: 0.3;
+}
+#image_team1, #image_team2, #image_team3{
+    width: 60%!important;
+    margin-top: 0!important;
+    opacity:0.3;
 }
 .navbar-toggler, .navbar-toggler-icon{
     border-color: white!important;
@@ -215,4 +231,11 @@ p.mb-0{
 }
 .dropdown{
   display: none!important;
+}
+footer{
+    width: 100%;
+    background-color: #9EC1BA;
+}
+h5{
+    font-weight: bolder!important;
 }

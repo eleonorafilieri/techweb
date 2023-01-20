@@ -43,6 +43,7 @@
                         <span id="confirm-password-strength"></span>
                         <input type="password" class="form-control" name="confirm-password" id="confirm-password" minlength="8" required>
                         <?php
+                        //popup per controllo delle password
                         if (isset($_SESSION["message"])) {
                         ?>
                             <div id="error-message"> <?= $_SESSION["message"] ?> </div>
