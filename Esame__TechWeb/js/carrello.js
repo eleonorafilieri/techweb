@@ -1,14 +1,31 @@
 
-    //apre voci di menu
+    //funzione che permette l'apertura delle voci di menu
+$(function () {
     $('#home').click(function () {
-       window.location = '../pagine/homepage.php';
+        $(window.location).attr('href', 'homepage.php');
     });
 
+    $('#about').click(function () {
+        console.log("ok");
+        $(window.location).attr('href', 'about.php');
+    });
+    $('#logout').click(function () {
+        $(window.location).attr('href', '../dataManagement/logout.php');
+    });
+
+     //FAR CHIUDERE LA NAVBAR QUANDO È COLLAPSE
+     $('.navbar-collapse a:not(#navbarDropdownMenuLink)').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
+});
+
 $(function () {
-    //STAMPA IL CARRELLO
+    //questa funzione si trova in basso a riga 87
     reloadCart();
 
-    //pulisce la carta
+    //svuota il carrrello-->al click sul button presente nella pagina carrello.php viene richiamato il
+    //file clearCart.php, il quale distrugge la variabile cart con la funzione unset. a questo file viene
+    //passato anche il messaggio che verrà poi visualizzato nel carrello.
     $('#clearCart').click(function () {
         var msg = "Carrello svuotato con successo!";
         $.ajax({
@@ -23,7 +40,10 @@ $(function () {
         });
     });
 
-    //elimina un prodotto
+    //elimina un prodotto-->al click sul button presente nella pagina carrello.php viene richiamato il
+    //file deleteProduct.php, il quale rimuove il prodotto nela variabile di sessione cart. a questo file
+    //viene passato sia il messaggio che verrà poi visualizzato nel carrello, sia l'id del
+    //prodotto da eliminare
     $('.col').on('click', '#deleteProduct', function () {
         var msg = "Prodotto cancellato con successo!";
         var id = $(this).attr("data-value");
@@ -40,11 +60,13 @@ $(function () {
         });
     });
 
-    //compra quello che c'è nel carrello
+    //compra quello che c'è nel carrello-->viene richiamato il file checkout.php che semplicemente distrugge
+    //la variabile di sessione cart. In questo caso la funzione mostra semplicemente un messaggio di avvenuto
+    //acquisto all'utente
     $("#checkout").click(function(){
         $(this).html("<div class='loader'></div>");
         setTimeout(() =>{
-            $(this).html("Purchased <i class='fa fa-check'></i>");
+            $(this).html("Acquisto completato! <i class='fa fa-check'></i>");
             $(this).css("color", "white");
             $(this).css("pointer-events", "none");
         }, 2000);
@@ -68,7 +90,9 @@ $(function () {
 
 
 });
-
+//questa funzione si attiva subito all'apertura della pagina del carrello;
+//infatti viene richiamata all'inizio di questo file. Semplicemente invia una richiesta ajax al file
+//getProductCart.php per ottenere le informazioni dei prodotti da mostrare.
 function reloadCart(){
     $.ajax({
         url: '../dataManagement/getProductCart.php',
@@ -79,7 +103,7 @@ function reloadCart(){
     });
 }
 
-
+//stampa dei prodotti nel carrello qualora questo sia vuoto
 function printEmptyCart() {
     var thead = $('<thead></thead>')
     var th = $('<th></th><th>Nome</th><th>Prezzo</th><th>Totale</th>');
@@ -89,13 +113,15 @@ function printEmptyCart() {
     $('.table').append(thead);
     $('.table').append(tbody);
     var tr = $('<tr></tr>');
-    var td = $('<td colspan="4" class="text-center">No Item in Cart</td>');
+    var td = $('<td colspan="4" class="text-center">Carrello Vuoto!</td>');
 
     tr.append(td);
     tbody.append(tr);
     $('#clearCart, #checkout').addClass('disabled');
 }
-
+//stampa dei prodotti nel carrello qualora questo sia pieno-->i dati che vengono passati a questa funzione
+//sono di tipo json e vengono recuperati dalla funzione reloadCart a riga 96,
+//che a sua volta lo recupera dal file getProductCart.php
 function printCart(json) {
     var total = 0;
     var thead = $('<thead></thead>')

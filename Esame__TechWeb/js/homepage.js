@@ -1,6 +1,10 @@
 var type;
 $(function () {
-    //PULISCE E AL SUCCESSO STAMPA IL DIV CONTENENTE I PRODOTTI
+    //PULISCE E AL SUCCESSO STAMPA IL DIV CONTENENTE I PRODOTTI-->questa funzione si
+    //attiva al click sul menu a tendina della sezione "Ambienti". In base al data-value ricavato
+    //dlla voce html del menu,invia una richiesta di dati in json al fie getProductCart. Una volta ricevute
+    //queste informazioni (success) passa alla funzione printObject a riga 112.
+
     $('.dropdown-menu a').click(function () {
         $('#card-section').empty();
         type = $(this).attr("data-value");
@@ -19,7 +23,10 @@ $(function () {
     });
 
 
-    //È UNA PAGINA DINAMICA QUINDI DELEGO LA FUNZIONE A CARD-SECTION
+    //inserisce i prodotti nel carrello-->viene selezionato l'id #cart che a riga 136 viene
+    //assegnato al bottone di aggiunta dei prodotti al carrello. In questa riga viene salvato anche il
+    //valore dell'id del prodotto che viene aggiunto al carrello. In questo modo, si passa
+    //questo valore a insertShoppingCart.php che recupera le informazioni del prodotto dal db.
     $('#card-section').on('click', '#cart', function () {
         //var titolo = $(this).parents("div").closest().text();
         id = $(this).attr("data-value");
@@ -37,9 +44,9 @@ $(function () {
             }
         });
     });
-
+//controllo che al click sul button per eliminare un prodotto dal db richiama la funzione presente
+//in deleteProductAdmin, passando come parametro l'id del record da eliminare
     $('#card-section').on('click', '#delete', function () {
-        //var titolo = $(this).parents("div").closest().text();
         id = $(this).attr("data-value");
 
         $.ajax({
