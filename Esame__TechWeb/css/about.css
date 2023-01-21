@@ -58,42 +58,6 @@ section {
     margin-top: 0em;
 }
 
-.card-title {
-    color: #fff;
-    font-size: 20px;
-}
-
-.card-text {
-    color: #ddd;
-    padding-bottom: 15px;
-}
-
-.card-body {
-    padding: 0.5rem 0.5rem !important;
-}
-
-.card-body>.btn-primary {
-    background-color: transparent !important;
-    border: 2px solid #fff !important;
-    border-radius: inherit !important;
-}
-
-.card-body>.btn-primary:hover {
-    background-color: white !important;
-    color: black !important;
-}
-
-.cart-btn {
-    background-color: #edeef2 !important;
-    color: #000 !important;
-    width: 96px;
-    border-color: #7a6656 !important;
-    border-width: 2px !important;
-    border-radius: 30px !important;
-    margin: 0 auto;
-    margin-top: -21px;
-    margin-right: 16px
-}
 
 .fa-cart-plus {
     padding-right: 10px;
@@ -232,10 +196,8 @@ p.mb-0{
 .dropdown{
   display: none!important;
 }
-footer{
-    width: 100%;
-    background-color: #9EC1BA;
-}
-h5{
-    font-weight: bolder!important;
+
+.name_team{
+    font-size: 1.5rem;
+    margin: 1rem;
 }

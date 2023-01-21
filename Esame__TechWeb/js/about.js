@@ -1,3 +1,4 @@
+//serie di funzioni che permettono delle animazioni nel file about.php
 $( document ).ready(function() {  
     $( ".about_p" ).animate({
         margin: "0 1rem",

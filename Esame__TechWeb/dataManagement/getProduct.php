@@ -1,7 +1,14 @@
 <?php
+//questo file viene richiamato in homepage.js al click sul dropdown menu che permette la
+//visualizzazione dei prodotti esistenti per una categoria. Proprio da quella funzione viene
+//passata qui la categoria di prodotti, e a sua volta questo file passerà i dati alla funzione
+//getMobili presente nel file db.php, che recupererà effettivamente tutte le informazioni sui
+//singoli prodotti per categoria dal db. Ottenuta questa informazione questo file stamperà il contenuto json
+//elaborato dalla richiesta al db.
 include "db.php";
 header("Content-type: application/json");
-
+//questa funzione header invia l'intestazione http json al browser
+//per informarlo sul tipo di dati che gli sta inviando. 
 print "{\n";
 
 $rows = getmobili();

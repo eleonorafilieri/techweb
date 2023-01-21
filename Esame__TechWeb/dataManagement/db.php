@@ -107,7 +107,10 @@
 
         $db = null;
     }
-
+    //getProductCart è una funzione che permette di recuperare le informazioni sui prodotti inseriti 
+    //nel carrello presenti nel db ma non li stampa.
+    //La funzione di stampa dei dati ricevuti dal db si trova nel file carrello.js,
+    //che a sua volta riceve i dati ottenuti dal db convertiti in json dal file getProductCart.php
     function getProductCart(){
         try {
             $db = connectionToDb();
@@ -120,7 +123,9 @@
 
         $db = null;
     }
-
+//funzione che elimina dal db degli articoli solo se l'accesso è stato effettuato da un admin. Non vi sono
+//controlli poiché il button che permette l'eliminazione dei prodotti appare all'utente solo se ha già
+//fatto l'accesso come admin.
    function deleteProductAdmin($id){
         try {
             $db = connectionToDb();
@@ -132,7 +137,9 @@
         return $rows;
         $db = null;
     }
-
+//funzione che aggiunge nel db degli articoli solo se l'accesso è stato effettuato da un admin. Non vi sono
+//controlli poiché il button che permette l'aggiunta di prodotti appare all'utente solo se ha già
+//fatto l'accesso come admin.
    function addProductAdmin($name, $price, $type){
         try {
             $db = connectionToDb();
