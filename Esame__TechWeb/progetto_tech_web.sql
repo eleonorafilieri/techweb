@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Gen 12, 2023 alle 15:47
+-- Creato il: Gen 21, 2023 alle 16:20
 -- Versione del server: 10.4.8-MariaDB
 -- Versione PHP: 7.3.11
 
@@ -80,7 +80,10 @@ INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `administrator`
 (20, 'cipollino', 'cipollino@pino.it', '7508e5ccb8260508da5f6a7a2a8cd717', 0),
 (22, 'eleonora.filieri', 'eleonorafil21@gmail.com', '34dcc95d1be4fefbeaba8fe2d8d0a4bd', 1),
 (23, 'ele93', 'eleonora.filieri@edu.unito.it', '34dcc95d1be4fefbeaba8fe2d8d0a4bd', 0),
-(24, 'ele', 'ciao@ciao.it', '1f648204cf4af71803d8147fd5e9d812', 0);
+(24, 'ele', 'ciao@ciao.it', '1f648204cf4af71803d8147fd5e9d812', 0),
+(25, 'ciao', 'ciao@cio.it', 'ec49340def4639c754fa729e0e6d403c', 0),
+(26, 'thomas', 'thomas@gmail.com', '955503b747b57d7897c9f6715be95c65', 0),
+(27, 'carlo', 'carlo@gmail.com', '28de0a173441222108bba883399ee887', 0);
 
 --
 -- Indici per le tabelle scaricate
@@ -114,7 +117,7 @@ ALTER TABLE `mobili`
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
