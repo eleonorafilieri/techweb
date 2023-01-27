@@ -55,12 +55,9 @@ $(function () {
         }
     }
 
-    //Toast message alert
-    function toastMessage(title, message){
-        $('.toast').toast({delay: 2000});
-        $('.toast').toast('show');
-        $('.toast-header').html(title);
-        $('.toast-body').html(message);
+    //alert
+    function alertMessage(){
+        alert("Le password non coincidono!")
     }
 
     //Check email
@@ -82,7 +79,7 @@ $(function () {
         if (($('#password').val() === $('#confirm-password').val())) {
             return;
         } else {
-            toastMessage("Operazione fallita", "Le password non coincidono!");
+            alertMessage("Operazione fallita", "Le password non coincidono!");
             event.preventDefault();
         }
     });

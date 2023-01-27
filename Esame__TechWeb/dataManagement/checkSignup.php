@@ -17,7 +17,7 @@ if ($password != $confirm_password) {
 $cryptoPassword = md5($password);
 
 if (checkEmail($email)) {
-    redirect("../pagine/signup.php", "Email esistente!.");
+    redirect("../pagine/signup.php", "Email esistente!");
 } else if (checkUsername($username)) {
     redirect("../pagine/signup.php", "Il nome utente non è disponibile!");
 } else {

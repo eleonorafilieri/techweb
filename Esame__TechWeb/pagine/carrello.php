@@ -1,7 +1,6 @@
 <?php
 //Il file corrente gestisce la registrazione di un nuovo utente.
 include("../dataManagement/db.php");
-//include("../dataManagement/common.php");
 isLogged();
 ?>
 <!doctype html>

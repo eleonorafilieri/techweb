@@ -1,4 +1,6 @@
-
+<?php
+include("../dataManagement/db.php");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -52,49 +54,15 @@
                         }
                         ?>
                     </div>
-
                     <div class="d-grid">
                         <input class="btn btn-primary mb-2" type="submit" value="Registrami" id="signup">
                         <a class="btn btn-danger" href="index.php" role="button">Indietro</a>
                     </div>
 
                 </form>
-                <!-- LOGIN CON SOCIAL-->
-                <div class="container w-100 my-5">
-                    <div class="row text-center">
-                        <div class="col-12">Registrati con:</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button id="fb" class="btn btn-outline-primary w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-12 text-center">
-                                        Facebook
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button id="google"class="btn btn-outline-danger w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-12  col-md-12 text-center">
-                                        Google
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!--TOAST ALERT PER LE PASSWORD NON UGUALI-->
-    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
-        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header"></div>
-            <div class="toast-body"></div>
-        </div>
-    </div>
+    </div>    
 </body>
 
 </html>

@@ -58,3 +58,8 @@ text-decoration: none!important;
 text-decoration: underline;
 margin-top: 0 auto;
 }
+#error-message{
+    color:red;
+    font-weight: 700;
+    margin-top:0.5em;
+}

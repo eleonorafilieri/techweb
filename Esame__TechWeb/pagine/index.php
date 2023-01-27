@@ -1,6 +1,5 @@
 <?php
 include("../dataManagement/db.php");
-//include("../dataManagement/common.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -51,11 +50,6 @@ include("../dataManagement/db.php");
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" name="password">
                     </div>
-                    <div class="mb-4" form-check>
-                        <input type="checkbox" name="" class="form-check-input">
-                        <label for="remember-me" class="form-check-label">Ricordami</label>
-                    </div>
-
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary mb-2">Login</button>
                         <a class="btn btn-primary" href="signup.php" role="button" id="registration">Registrati</a>
