@@ -112,7 +112,7 @@ isLogged();
             <h2 class="jumbotron-heading">Crea con noi la tua casa perfetta!</h2>
             <h3 class="jumbotron-heading">Scegli tra tanti prodotti e programma la tua spedizione!</h3>
             <p class="lead text-muted mb-0">Da 25 anni di storia, 20 negozi, 8 store monomarca e 2 outlet, oltre
-              300 collaboratori, migliaia di clienti soddisfatti: sono questi i numeri di Nuovarredo, il marchio
+              300 collaboratori, migliaia di clienti soddisfatti: sono questi i numeri di Moderno Arredamenti, il marchio
               di mobilifici che ha sviluppato una rete capillare in tutta la Puglia, Basilicata, Toscana, Lazio e
               Lombardia e punta ad aumentare la sua presenza su tutto il territorio nazionale.</p>
         </div>
