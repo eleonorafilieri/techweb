@@ -2,7 +2,13 @@
   font-family: 'Montserrat', sans-serif;
 
 }
-}.nav-link:hover {
+.badge {
+    position: absolute !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+}
+
+.nav-link:hover {
     text-decoration: underline;
     color: white !important;
 }
@@ -109,4 +115,7 @@ thead th{
 h1{
     font-size:1.7rem;
     margin:2rem 0!important;
+}
+.svuota_carrello{
+    display: none!important;
 }

@@ -56,6 +56,7 @@ $(function () {
             //datatype: 'json',
             success: reloadObject
         });
+        alert("Prodotto eliminato!");
     });
 
     $('#addBtn').click(function () {

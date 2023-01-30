@@ -36,6 +36,7 @@ $(function () {
                 $("#tableDiv").load(" #tableDiv");
                 $(".table").load(" .table");
                 $('#clearCart, #checkout').addClass('disabled');
+                $(".badge").addClass("svuota_carrello");
             }
         });
     });

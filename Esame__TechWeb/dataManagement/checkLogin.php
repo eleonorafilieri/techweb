@@ -12,7 +12,6 @@ if (isset($_REQUEST["username"]) && isset($_REQUEST["password"])) {
     if (isset($_SESSION)) {
       session_destroy();
       session_start();
-      session_regenerate_id(TRUE);
     }
     //recupero del valore del campo "administrator" sul db tramite il valore dell'username
     //che viene passato alla funzione checkAdministrator presente in db.php. Questa funzione
